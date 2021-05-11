@@ -16,6 +16,16 @@
     <img src={{item.url}}>
   </ion-item>
   <ion-item>
-    <p>{{item.title}}</p>
+    <div class="caption">
+      {{item.title}}
+    </div>
   </ion-item>
 </ion-content>
+<ion-footer>
+  <ion-button expand="block" href="./album/{{item.albumId}}">
+    Back
+  </ion-button>
+  <ion-button expand="block" href="./">
+    Home
+  </ion-button>
+</ion-footer>

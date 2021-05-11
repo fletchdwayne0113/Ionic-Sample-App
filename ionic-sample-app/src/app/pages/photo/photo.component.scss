@@ -2,9 +2,18 @@ ion-header {
     text-align: center;
 }
 ion-content {
-    height: 100%;
+    height: calc(100vh - 55px);
 }
 ion-item {
-    align-items: center;
+    text-align: center;
     margin: 10px;
+}
+ion-button {
+    margin: 10px;
+}
+.caption {
+    background-color: #4472c4;
+    color: white;
+    padding: 10px;
+    width: 100%;
 }
