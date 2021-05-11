@@ -13,6 +13,9 @@ export class HomeComponent implements OnInit {
   constructor(private itemsApiService: ItemsApiService) { }
 
   ngOnInit() {
+    this.getAllItems();
+  }
+  getAllItems() {
     this.itemsApiService.getAllItems().subscribe({
       next: data => {
         this.items = data;

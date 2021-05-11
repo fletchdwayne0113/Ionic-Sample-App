@@ -14,8 +14,10 @@ export class ItemsApiService {
   getAllItems() {    
     return this.httpClient.get(this.userInfoApiUrl);
   }
-  getUserPhotos(userId: number) {
+  getUserPhotos(userId) {
     return this.httpClient.get(this.photosApiUrl + '?albumId=' + userId);
   }
- 
+  getUserPhoto(photoId) {
+    return this.httpClient.get(this.photosApiUrl + '?id' + photoId);
+  }
 }

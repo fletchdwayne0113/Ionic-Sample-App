@@ -1,3 +1,21 @@
-<p>
-  home works!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>User Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true">
+  <ion-item *ngFor="let i of items" href="/album/{{i.id}}">
+    <div class="item-content">
+      <div>
+        Name: {{i.name}}
+      </div>
+      <div>
+        Email: {{i.email}}
+      </div>
+      <div>
+        Phone: {{i.phone}}
+      </div>
+    </div>
+  </ion-item>
+</ion-content>

@@ -1,3 +1,16 @@
-<p>
-  album works!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Album ID: {{id}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true">
+  <ion-item *ngFor="let i of items" href="/photo/{{i.id}}">
+    <div class="item-content">
+      <img src={{i.thumbnailUrl}}>
+      <p>
+        {{i.title}}
+      </p>
+    </div>
+  </ion-item>
+</ion-content>

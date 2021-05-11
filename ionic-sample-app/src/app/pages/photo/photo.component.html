@@ -1,3 +1,21 @@
-<p>
-  photo works!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div>
+        Album ID: {{item.albumId}}
+      </div>
+      <div>
+        Photo ID: {{item.id}}
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <img src={{item.url}}>
+    <p>
+      {{item.title}}
+    </p>
+  </ion-item>
+</ion-content>
